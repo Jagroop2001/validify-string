@@ -9,6 +9,8 @@ import {
   countOccurrences,
   isPasswordStrong,
   isURL,
+  isValidPhone,
+  isValidCreditCard,
 } from "./utils/utilityFunctions";
 
 const validator = {
@@ -22,6 +24,8 @@ const validator = {
   countOccurrences,
   isPasswordStrong,
   isURL,
+  isValidPhone,
+  isValidCreditCard,
 };
 
 export default validator;

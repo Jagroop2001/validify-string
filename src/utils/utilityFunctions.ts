@@ -77,3 +77,36 @@ export const isURL = (str: string) => {
   // test the string against the regular expression
   return urlRegex.test(str);
 };
+
+export const isValidPhone=(num:string):boolean=>{
+  //number should be of 10 digits.
+  if (num[0]=="0") return false;
+  // define a regular expression that matches a numbers
+  const phoneregex = /\d/g;
+  // test the number against the regular expression and then compare its length with original number length
+  return num.length==num.match(phoneregex)?.length; 
+};
+
+export const isValidCreditCard = (num:string):boolean =>{
+  //Luhn's algorithm
+  if (num.length!=16) return false; //valid credit card is of 16 digits
+  let sum = 0;
+  for (let index = num.length; index >=1 ; index--) {
+    let digit = parseInt(num[index-1]);
+    if(index%2==0){
+      //add digit to sum
+      sum += digit;
+    }else{
+      //doubling the digit if coming on odd place from right. 
+      digit *= 2;
+      if(digit>9){
+        //subtract 9 if digit after doubling is greater than 9
+        digit -= 9;
+      }
+      //add digit to sum
+      sum += digit;
+    }    
+  }
+  // if sum is a multiple of 10 than it is a valid number
+  return sum%10==0?true:false;
+}
