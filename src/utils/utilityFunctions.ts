@@ -110,3 +110,34 @@ export const isValidCreditCard = (num:string):boolean =>{
   // if sum is a multiple of 10 than it is a valid number
   return sum%10==0?true:false;
 }
+ export const isValidCardNumber = (num:string):boolean => {
+  //Check if the num contains only numeric value  
+  //and is of between 13 to 19 digits
+  const regex = /^[0-9]{13,19}$/;
+  if (!regex.test(num)){
+      return false;
+  }
+  // Appling luhn's algorithm 
+  let sum = 0; 
+  let multiplier = 1; 
+  // Starting from last digit
+  for (let i = num.length - 1; i >= 0; i--) {
+    let digit = 0;
+    // Extract the next digit and multiply by 1 or 2 on alternative digits.
+    digit = Number(num.charAt(i)) * multiplier;
+    // If the result is in two digits add 1 to the checksum total
+    if (digit > 9) {
+      digit -= 9;
+    }
+    // Add the units digit to the sum
+    sum += digit;
+    // Switch the value of multiplier to alternate digit 
+    if (multiplier == 1) {
+      multiplier = 2;
+    } else {
+      multiplier = 1;
+    }
+  }
+  // Checks divisible by 10 
+  return (sum % 10) == 0;
+}

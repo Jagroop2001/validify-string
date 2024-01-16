@@ -10,7 +10,7 @@ import {
   isPasswordStrong,
   isURL,
   isValidPhone,
-  isValidCreditCard,
+  isValidCardNumber,
 } from "./utils/utilityFunctions";
 
 const validator = {
@@ -25,7 +25,7 @@ const validator = {
   isPasswordStrong,
   isURL,
   isValidPhone,
-  isValidCreditCard,
+  isValidCardNumber,
 };
 
 export default validator;
