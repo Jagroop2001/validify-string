@@ -9,6 +9,7 @@ import {
   countOccurrences,
   isPasswordStrong,
   isURL,
+  isIP,
 } from "./utils/utilityFunctions";
 
 const validator = {
@@ -22,6 +23,7 @@ const validator = {
   countOccurrences,
   isPasswordStrong,
   isURL,
+  isIP,
 };
 
 export default validator;
