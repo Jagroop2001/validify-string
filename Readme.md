@@ -69,3 +69,23 @@ This function will check if given Input is valid password or not.
 validator.isURL(str)
 This function will check if given Input is valid URL or not.
 ```
+
+```
+validator.isUpperCase(str)
+Check if the entire string is in uppercase.
+```
+
+```
+validator.isLowerCase(str)
+Check if the entire string is in lowercase.
+```
+
+```
+validator.isDate(str)
+Check if the string represents a valid date.
+```
+
+```
+validator.isPalindrome(str)
+Check if the string is a palindrome.
+```
