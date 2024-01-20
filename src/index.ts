@@ -13,6 +13,8 @@ import {
   isLowercase,
   isPalindrome,
   isValidDate
+  isValidPhone,
+  isValidCardNumber,
 } from "./utils/utilityFunctions";
 
 const validator = {
@@ -30,6 +32,8 @@ const validator = {
   isLowercase,
   isPalindrome,
   isValidDate
+  isValidPhone,
+  isValidCardNumber,
 };
 
 export default validator;
