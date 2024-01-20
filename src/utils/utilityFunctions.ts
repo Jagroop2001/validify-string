@@ -87,6 +87,30 @@ export const isValidPhone=(num:string):boolean=>{
   return num.length==num.match(phoneregex)?.length; 
 };
 
+export const isUppercase = (str: string) => {
+  return str === str.toUpperCase();
+};
+
+export const isLowercase = (str: string) => {
+  return str === str.toLowerCase();
+};
+
+export const isPalindrome = (str: string) => {
+  const cleanStr = str.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+  const reversedStr = cleanStr.split('').reverse().join('');
+  return cleanStr === reversedStr;
+};
+
+export const isValidDate = (dateString: string) => {
+  // Assuming the date format is YYYY-MM-DD for simplicity
+  const regex = /^\d{4}-\d{2}-\d{2}$/;
+  if (!regex.test(dateString)) return false;
+
+  const date = new Date(dateString);
+  return !isNaN(date.getTime());
+};
+
+
 export const isValidCardNumber = (num:string):boolean => {
   //Check if the num contains only numeric value  
   //and is of between 13 to 19 digits
