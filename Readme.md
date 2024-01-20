@@ -13,9 +13,8 @@ npm i validify-string
 ```js
 import validator from "validify-string";
 
- validator.isPasswordStrong("StrongPass12@#")
- validator.isAlpha("Jagroop")
- 
+validator.isPasswordStrong("StrongPass12@#");
+validator.isAlpha("Jagroop");
 ```
 
 ## Details
@@ -68,4 +67,14 @@ This function will check if given Input is valid password or not.
 ```
 validator.isURL(str)
 This function will check if given Input is valid URL or not.
+```
+
+```
+validator.isValidPhone(phoneNumber)
+This function will check if given phoneNumber (of type string) is valid Phone number or not.
+```
+
+```
+validator.isValidCardNumber(cardNumber)
+This function will check if given Card number (of type string) is valid Card Number or not by using Luhn's Algorithm.
 ```
