@@ -10,6 +10,10 @@ import {
   isPasswordStrong,
   isURL,
   isIP,
+  isUppercase,
+  isLowercase,
+  isPalindrome,
+  isValidDate
   isValidPhone,
   isValidCardNumber,
 } from "./utils/utilityFunctions";
@@ -26,6 +30,10 @@ const validator = {
   isPasswordStrong,
   isURL,
   isIP,
+  isUppercase,
+  isLowercase,
+  isPalindrome,
+  isValidDate
   isValidPhone,
   isValidCardNumber,
 };
