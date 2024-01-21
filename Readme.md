@@ -97,3 +97,8 @@ This function will check if given phoneNumber (of type string) is valid Phone nu
 validator.isValidCardNumber(cardNumber)
 This function will check if given Card number (of type string) is valid Card Number or not by using Luhn's Algorithm.
 ```
+
+```
+validator.isIP(IP Address)
+This function will check if string contains a Valid IP address or not.
+```
