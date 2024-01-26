@@ -19,6 +19,7 @@ import {
   isAlphanumeric,
   isHash,
   isHexadecimal,
+  isASCII,
 } from "./utils/utilityFunctions";
 
 const validator = {
@@ -41,9 +42,8 @@ const validator = {
   isValidCardNumber,
   isAlphanumeric,
   isHash,
-  isHexadecimal
+  isHexadecimal,
+  isASCII,
 };
 
 export default validator;
-
-
