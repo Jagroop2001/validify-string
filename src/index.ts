@@ -1,5 +1,3 @@
-// deno-lint-ignore-file
-
 import {
   isEmpty,
   isIdentical,
@@ -21,7 +19,7 @@ import {
   isAlphanumeric,
   isHash,
   isHexadecimal,
-  isASCII,
+  isASCII
 } from "./utils/utilityFunctions";
 
 const validator = {
@@ -45,7 +43,7 @@ const validator = {
   isAlphanumeric,
   isHash,
   isHexadecimal,
-  isASCII,
+  isASCII
 };
 
 export default validator;
