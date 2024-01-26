@@ -120,6 +120,22 @@ validator.isHexadecimal(str)
 This function will check if string is hexadecimal or not.
 ```
 
+```
+validator.isBase32(str)
+This function will check if string isBase32 or not.
+```
+
+```
+validator.isBase64(str)
+This function will check if string isBase64 or not.
+```
+
+```
+validator.isEthereumAddress(str)
+This function will check if string isEthereumAddress or not.
+```
+
+
 # Contributing Guidelines
 
 
