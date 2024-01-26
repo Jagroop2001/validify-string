@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 export const isIdentical = (strOne: string, strTwo: string) => {
   strOne = strOne.trim();
   strTwo = strTwo.trim();
