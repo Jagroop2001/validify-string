@@ -21,6 +21,10 @@ import {
   isHexadecimal,
 } from "./utils/utilityFunctions";
 
+
+import { isBase32, isBase64, isEthereumAddress } from "./utils/validateFunctions";
+
+
 const validator = {
   isEmpty,
   isIdentical,
@@ -41,7 +45,10 @@ const validator = {
   isValidCardNumber,
   isAlphanumeric,
   isHash,
-  isHexadecimal
+  isHexadecimal,
+  isBase32,
+  isBase64,
+  isEthereumAddress
 };
 
 export default validator;
