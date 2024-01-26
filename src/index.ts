@@ -13,9 +13,12 @@ import {
   isUppercase,
   isLowercase,
   isPalindrome,
-  isValidDate
+  isValidDate,
   isValidPhone,
   isValidCardNumber,
+  isAlphanumeric,
+  isHash,
+  isHexadecimal,
 } from "./utils/utilityFunctions";
 
 const validator = {
@@ -33,9 +36,14 @@ const validator = {
   isUppercase,
   isLowercase,
   isPalindrome,
-  isValidDate
+  isValidDate,
   isValidPhone,
   isValidCardNumber,
+  isAlphanumeric,
+  isHash,
+  isHexadecimal
 };
 
 export default validator;
+
+

@@ -102,6 +102,24 @@ This function will check if given Card number (of type string) is valid Card Num
 validator.isIP(IP Address)
 This function will check if string contains a Valid IP address or not.
 ```
+
+```
+validator.isAlphanumeric(str)
+This function will check if string is alphanumeric or not.
+```
+
+
+```
+validator.isHash(str)
+This function will check if string is a hash or not.
+```
+
+
+```
+validator.isHexadecimal(str)
+This function will check if string is hexadecimal or not.
+```
+
 # Contributing Guidelines
 
 
@@ -170,3 +188,4 @@ Please go through the guidelines below to make your first contribution:
 - Create a pull request!
 
 <hr>
+

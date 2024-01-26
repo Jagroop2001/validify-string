@@ -149,3 +149,24 @@ export const isValidCardNumber = (num:string):boolean => {
   // Checks divisible by 10 
   return (sum % 10) == 0;
 }
+
+
+//Check alphanumeric string
+
+export const isAlphanumeric=(str: string): boolean=> {
+  const alphanumericRegex: RegExp = /^[a-zA-Z0-9]+$/;
+  return alphanumericRegex.test(str);
+}
+
+//Check Ishash
+
+export const isHash=(str: string): boolean=> {
+  return /^[a-fA-F0-9]+$/.test(str) && (str.length === 32 || str.length === 40 || str.length === 64);
+}
+
+//Check hexadecimal
+
+export const isHexadecimal=(str: string): boolean=> {
+  const hexadecimalRegex: RegExp = /^[0-9a-fA-F]+$/;
+  return hexadecimalRegex.test(str);
+}
