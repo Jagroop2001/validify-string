@@ -120,6 +120,11 @@ validator.isHexadecimal(str)
 This function will check if string is hexadecimal or not.
 ```
 
+```
+validator.isASCII(str)
+This function will check if each character of string is in ASCII Value or not. 
+```
+
 # Contributing Guidelines
 
 
