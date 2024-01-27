@@ -124,7 +124,20 @@ This function will check if string is hexadecimal or not.
 validator.isASCII(str)
 This function will check if each character of string is in ASCII Value or not. 
 ```
+...
+validator.isHexColor
+utility function is designed to check whether a given string represents a valid hexadecimal color code
+...
 
+...
+validator.isJSON
+utility function is used to check whether a given string is a valid JSON (JavaScript Object Notation) string
+...
+
+...
+validator.isJWT
+utility function is used to check whether a given string is a valid JSON Web Token (JWT)
+...
 # Contributing Guidelines
 
 
