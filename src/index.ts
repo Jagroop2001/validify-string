@@ -25,6 +25,10 @@ import {
   isJWT
 } from "./utils/utilityFunctions";
 
+
+import { isBase32, isBase64, isEthereumAddress } from "./utils/validateFunctions";
+
+
 const validator = {
   isEmpty,
   isIdentical,
@@ -49,7 +53,11 @@ const validator = {
   isASCII,
   isHexColor,
   isJSON,
-  isJWT
+  isJWT,
+  isBase32,
+  isBase64,
+  isEthereumAddress
+
 };
 
 export default validator;
