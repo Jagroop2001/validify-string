@@ -175,3 +175,33 @@ export const isHexadecimal=(str: string): boolean=> {
 export const isASCII = (str: string, extended?: string[]): boolean => {
   return (extended ? /^[\x00-\xFF]+$/ : /^[\x00-\x7F]+$/).test(str);
 };
+
+
+// Check Hexcolour
+export const isHexColor = (str: string): boolean => {
+  const hexColorRegex: RegExp = /^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/;
+  return hexColorRegex.test(str);
+};
+
+// Check JSON
+export const isJSON = (str: string): boolean => {
+  try {
+    JSON.parse(str);
+    return true;
+  } catch (e) {
+    return false;
+  }
+};
+
+// Check JWT
+export const isJWT = (str: string): boolean => {
+  
+  const jwtParts = str.split('.');
+  return jwtParts.length === 3;
+};
+
+
+
+
+
+
