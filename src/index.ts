@@ -49,7 +49,8 @@ const validator = {
   isHexadecimal,
   isBase32,
   isBase64,
-  isEthereumAddress
+  isEthereumAddress,
+  isStringWithoutSpecialCharacters
 };
 
 export default validator;
