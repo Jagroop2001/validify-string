@@ -22,7 +22,11 @@ import {
   isASCII,
   isHexColor,
   isJSON,
-  isJWT
+  isJWT,
+  trimRight,
+  trimLeft,
+  trimBoth
+
 } from "./utils/utilityFunctions";
 
 
@@ -56,7 +60,10 @@ const validator = {
   isJWT,
   isBase32,
   isBase64,
-  isEthereumAddress
+  isEthereumAddress,
+  trimRight,
+  trimLeft,
+  trimBoth
 
 };
 
