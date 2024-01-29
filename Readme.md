@@ -138,7 +138,17 @@ This function will check if string isEthereumAddress or not.
 
 ```
 validator.isASCII(str)
-This function will check if each character of string is in ASCII Value or not. 
+This function will check if each character of string is in ASCII Value or not.
+```
+
+```
+validator.isStringAContainsB(StringA, StringB)
+This function checks if the string A contains the string B
+```
+
+```
+validator.isStringAMatchesB(StringA, StringB)
+This function checks if the string A matches the string B
 ```
 ...
 validator.isHexColor
