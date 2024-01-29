@@ -170,3 +170,8 @@ export const isHexadecimal=(str: string): boolean=> {
   const hexadecimalRegex: RegExp = /^[0-9a-fA-F]+$/;
   return hexadecimalRegex.test(str);
 }
+
+//Check ASCII Value
+export const isASCII = (str: string, extended?: string[]): boolean => {
+  return (extended ? /^[\x00-\xFF]+$/ : /^[\x00-\x7F]+$/).test(str);
+};
