@@ -22,7 +22,11 @@ import {
   isASCII,
   isHexColor,
   isJSON,
-  isJWT
+  isJWT,
+  trimRight,
+  trimLeft,
+  trimBoth
+
 } from "./utils/utilityFunctions";
 
 
@@ -59,6 +63,9 @@ const validator = {
   isEthereumAddress,
   isStringWithoutSpecialCharacters,
   startsWithPrefix
+  trimRight,
+  trimLeft,
+  trimBoth,
 };
 
 export default validator;
