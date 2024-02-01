@@ -30,7 +30,7 @@ import {
 } from "./utils/utilityFunctions";
 
 
-import { isBase32, isBase64, isEthereumAddress } from "./utils/validateFunctions";
+import { isBase32, isBase64, isEthereumAddress ,isStringWithoutSpecialCharacters} from "./utils/validateFunctions";
 
 
 const validator = {
@@ -63,8 +63,8 @@ const validator = {
   isEthereumAddress,
   trimRight,
   trimLeft,
-  trimBoth
-
+  trimBoth,
+  isStringWithoutSpecialCharacters
 };
 
 export default validator;
