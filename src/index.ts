@@ -26,7 +26,7 @@ import {
 } from "./utils/utilityFunctions";
 
 
-import { isBase32, isBase64, isEthereumAddress } from "./utils/validateFunctions";
+import { isBase32, isBase64, isEthereumAddress ,isStringWithoutSpecialCharacters} from "./utils/validateFunctions";
 
 import { isStringAContainsB, isStringAMatchesB } from "./utils/stringCompareMatch";
 
@@ -59,7 +59,9 @@ const validator = {
   isBase64,
   isEthereumAddress,
   isStringAContainsB,
-  isStringAMatchesB
+  isStringAMatchesB,
+  isStringWithoutSpecialCharacters
+
 };
 
 export default validator;
