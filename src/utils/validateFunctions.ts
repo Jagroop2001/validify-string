@@ -22,3 +22,14 @@ export const isEthereumAddress = (address: string): boolean => {
     const ethereumAddressRegex = /^(0x)?[0-9a-fA-F]{40}$/;  // Ethereum address regex pattern
     return ethereumAddressRegex.test(address);
 }
+
+
+// specialCharactersValidation.ts
+
+export function isStringWithoutSpecialCharacters(inputString: string): boolean {
+    const regex = /^[a-zA-Z0-9_]+$/;
+  
+    // Test if the inputString matches the regular expression
+    return regex.test(inputString);
+  }
+  
