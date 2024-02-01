@@ -65,7 +65,7 @@ const validator = {
   trimRight,
   trimLeft,
   trimBoth,
-  stringCompare
+  stringCompare,
   isStringAContainsB,
   isStringAMatchesB,
   isStringWithoutSpecialCharacters
