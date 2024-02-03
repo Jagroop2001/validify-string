@@ -25,7 +25,8 @@ import {
   isJWT,
   trimRight,
   trimLeft,
-  trimBoth
+  trimBoth,
+  getAlphaNumString
 
 } from "./utils/utilityFunctions";
 
@@ -67,6 +68,7 @@ const validator = {
   trimRight,
   trimLeft,
   trimBoth,
+  getAlphaNumString,
   isStringAContainsB,
   isStringAMatchesB,
 };
