@@ -67,10 +67,8 @@ const validator = {
   trimRight,
   trimLeft,
   trimBoth,
-  stringCompare,
   isStringAContainsB,
   isStringAMatchesB,
-  isStringWithoutSpecialCharacters
 };
 
 export default validator;
