@@ -1,0 +1,33 @@
+{
+    "name": "validify-string",
+    "version": "1.0.1",
+    "description": "Ensure accurate and secure input with our reliable string validation library.",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+      "build": "tsc",
+      "prepare": "npm run build"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Jagroop2001/validify-string.git"
+    },
+    "keywords": [
+      "validator",
+      "validation",
+      "validate",
+      "validate-string"
+    ],
+    "author": "Jagroop <jagroopofficial29@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Jagroop2001/validify-string/issues"
+    },
+    "homepage": "https://github.com/Jagroop2001/validify-string#readme",
+    "devDependencies": {
+      "typescript": "^4.9.5"
+    },
+    "files": [
+      "lib/**/*"
+    ]
+  }
