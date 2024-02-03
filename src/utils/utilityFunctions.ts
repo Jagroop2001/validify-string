@@ -222,10 +222,6 @@ export const trimBoth = (str: string, chars: string): string => {
 
 // Returns the left substring of the input string
 export const getLeftSubstring = (inputString: string, n: number): string => {
-  if (n <= 0 || n > inputString.length) {
-      throw new Error("Invalid value of n. Please provide a value between 1 and the length of the input string.");
-  }
-
   return inputString.slice(0, n);
 };
 
