@@ -150,20 +150,19 @@ This function checks if the string A contains the string B
 validator.isStringAMatchesB(StringA, StringB)
 This function checks if the string A matches the string B
 ```
-...
+```
 validator.isHexColor
 utility function is designed to check whether a given string represents a valid hexadecimal color code
-...
+```
 
-...
+```
 validator.isJSON
 utility function is used to check whether a given string is a valid JSON (JavaScript Object Notation) string
-...
-
-...
+```
+```
 validator.isJWT
 utility function is used to check whether a given string is a valid JSON Web Token (JWT)
-...
+```
 
 ```
 validator.isStringWithoutSpecialCharacters(str)
