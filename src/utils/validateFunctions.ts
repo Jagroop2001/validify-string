@@ -33,3 +33,11 @@ export function isStringWithoutSpecialCharacters(inputString: string): boolean {
     return regex.test(inputString);
   }
   
+
+
+  // Check if a string starts with a specific prefix or not 
+
+export function startsWithPrefix(input: string, prefix: string): boolean {
+    return input.startsWith(prefix);
+  }
+  

@@ -30,7 +30,7 @@ import {
 } from "./utils/utilityFunctions";
 
 
-import { isBase32, isBase64, isEthereumAddress ,isStringWithoutSpecialCharacters} from "./utils/validateFunctions";
+import { isBase32, isBase64, isEthereumAddress ,isStringWithoutSpecialCharacters,startsWithPrefix} from "./utils/validateFunctions";
 
 import { isStringAContainsB, isStringAMatchesB } from "./utils/stringCompareMatch";
 
@@ -62,6 +62,8 @@ const validator = {
   isBase32,
   isBase64,
   isEthereumAddress,
+  isStringWithoutSpecialCharacters,
+  startsWithPrefix,
   trimRight,
   trimLeft,
   trimBoth,

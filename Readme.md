@@ -169,6 +169,12 @@ utility function is used to check whether a given string is a valid JSON Web Tok
 validator.isStringWithoutSpecialCharacters(str)
 This function will check the string is Without Special Characters or not. 
 ```
+
+```
+validator.startsWithPrefix(str)
+This function will Check if a string starts with a specific prefix or not. 
+```
+
 # Contributing Guidelines
 
 
