@@ -220,10 +220,12 @@ export const trimBoth = (str: string, chars: string): string => {
   return trimmedStr;
 };
 
-
-
-
-
-
-
-
+// Generate Random Alphanumeric String
+export const getAlphaNumString = (length: number): string => {
+  const chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  let result = '';
+  for (let i = length; i > 0; --i) {
+    result += chars[Math.floor(Math.random() * chars.length)];
+  }
+  return result;
+};
