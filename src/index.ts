@@ -32,6 +32,7 @@ import {
 
 import { isBase32, isBase64, isEthereumAddress ,isStringWithoutSpecialCharacters,startsWithPrefix} from "./utils/validateFunctions";
 
+import { isStringAContainsB, isStringAMatchesB } from "./utils/stringCompareMatch";
 
 const validator = {
   isEmpty,
@@ -62,10 +63,14 @@ const validator = {
   isBase64,
   isEthereumAddress,
   isStringWithoutSpecialCharacters,
-  startsWithPrefix
+  startsWithPrefix,
   trimRight,
   trimLeft,
   trimBoth,
+  stringCompare,
+  isStringAContainsB,
+  isStringAMatchesB,
+  isStringWithoutSpecialCharacters
 };
 
 export default validator;
