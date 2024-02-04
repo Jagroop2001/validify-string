@@ -178,6 +178,10 @@ This function will Check if a string starts with a specific prefix or not.
 validator.getAlphaNumString(int)
 This function returns a random alphanumeric string of length n.
 ```
+```
+validator.getLeftSubstring(str, int)
+This function returns the substring denoted by n positive left-most characters.
+```
 
 # Contributing Guidelines
 

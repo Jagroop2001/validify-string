@@ -26,8 +26,8 @@ import {
   trimRight,
   trimLeft,
   trimBoth,
-  getAlphaNumString
-
+  getAlphaNumString,
+  getLeftSubstring,
 } from "./utils/utilityFunctions";
 
 
@@ -69,6 +69,7 @@ const validator = {
   trimLeft,
   trimBoth,
   getAlphaNumString,
+  getLeftSubstring,
   isStringAContainsB,
   isStringAMatchesB,
 };
