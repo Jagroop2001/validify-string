@@ -138,22 +138,31 @@ This function will check if string isEthereumAddress or not.
 
 ```
 validator.isASCII(str)
-This function will check if each character of string is in ASCII Value or not. 
+This function will check if each character of string is in ASCII Value or not.
 ```
-...
+
+```
+validator.isStringAContainsB(StringA, StringB)
+This function checks if the string A contains the string B
+```
+
+```
+validator.isStringAMatchesB(StringA, StringB)
+This function checks if the string A matches the string B
+```
+```
 validator.isHexColor
 utility function is designed to check whether a given string represents a valid hexadecimal color code
-...
+```
 
-...
+```
 validator.isJSON
 utility function is used to check whether a given string is a valid JSON (JavaScript Object Notation) string
-...
-
-...
+```
+```
 validator.isJWT
 utility function is used to check whether a given string is a valid JSON Web Token (JWT)
-...
+```
 
 ```
 validator.isStringWithoutSpecialCharacters(str)
@@ -166,8 +175,16 @@ This function will Check if a string starts with a specific prefix or not.
 ```
 
 ```
+
 validator.endsWithSuffix(str)
 This function will Check if a string end with a specific suffix or not. 
+
+validator.getAlphaNumString(int)
+This function returns a random alphanumeric string of length n.
+```
+```
+validator.getLeftSubstring(str, int)
+This function returns the substring denoted by n positive left-most characters.
 ```
 
 # Contributing Guidelines

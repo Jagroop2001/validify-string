@@ -25,13 +25,15 @@ import {
   isJWT,
   trimRight,
   trimLeft,
-  trimBoth
-
+  trimBoth,
+  getAlphaNumString,
+  getLeftSubstring,
 } from "./utils/utilityFunctions";
 
 
 import { isBase32, isBase64, isEthereumAddress ,isStringWithoutSpecialCharacters,startsWithPrefix,endsWithSuffix} from "./utils/validateFunctions";
 
+import { isStringAContainsB, isStringAMatchesB } from "./utils/stringCompareMatch";
 
 const validator = {
   isEmpty,
@@ -67,6 +69,10 @@ const validator = {
   trimRight,
   trimLeft,
   trimBoth,
+  getAlphaNumString,
+  getLeftSubstring,
+  isStringAContainsB,
+  isStringAMatchesB,
 };
 
 export default validator;
