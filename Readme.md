@@ -175,11 +175,11 @@ This function will Check if a string starts with a specific prefix or not.
 ```
 
 ```
-
 validator.endsWithSuffix(str)
 This function will Check if a string end with a specific suffix or not. 
-
-validator.getAlphaNumString(int)
+```
+```
+validator.getAlphaNumString(str)
 This function returns a random alphanumeric string of length n.
 ```
 ```
