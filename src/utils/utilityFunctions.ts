@@ -199,6 +199,28 @@ export const isJWT = (str: string): boolean => {
   const jwtParts = str.split('.');
   return jwtParts.length === 3;
 };
+//trim functions
+export const trimLeft = (str: string, chars: string): string => {
+  const regex = new RegExp(`^[${chars}]+`);
+  return str.replace(regex, '');
+};
+
+export const trimRight = (str: string, chars: string): string => {
+  const regex = new RegExp(`[${chars}]+$`);
+  return str.replace(regex, '');
+};
+
+export const trimBoth = (str: string, chars: string): string => {
+  const leftRegex = new RegExp(`^[${chars}]+`);
+  const rightRegex = new RegExp(`[${chars}]+$`);
+  
+  let trimmedStr = str.replace(leftRegex, '');
+  trimmedStr = trimmedStr.replace(rightRegex, '');
+  
+  return trimmedStr;
+};
+
+
 
 
 
