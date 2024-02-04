@@ -43,7 +43,7 @@ export function startsWithPrefix(input: string, prefix: string): boolean {
   
 
 
-  // Check if a string starts with a specific suffix or not 
+  // Check if a string ends with a specific suffix or not 
 
 export function endsWithSuffix(inputString: string, suffix: string): boolean {
     return inputString.endsWith(suffix);
