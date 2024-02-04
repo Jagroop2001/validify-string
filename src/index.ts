@@ -26,7 +26,7 @@ import {
 } from "./utils/utilityFunctions";
 
 
-import { isBase32, isBase64, isEthereumAddress ,isStringWithoutSpecialCharacters,startsWithPrefix} from "./utils/validateFunctions";
+import { isBase32, isBase64, isEthereumAddress ,isStringWithoutSpecialCharacters,startsWithPrefix,endsWithSuffix} from "./utils/validateFunctions";
 
 
 const validator = {
@@ -58,7 +58,8 @@ const validator = {
   isBase64,
   isEthereumAddress,
   isStringWithoutSpecialCharacters,
-  startsWithPrefix
+  startsWithPrefix,
+  endsWithSuffix
 };
 
 export default validator;
