@@ -220,7 +220,10 @@ export const trimBoth = (str: string, chars: string): string => {
   return trimmedStr;
 };
 
-
+// Returns the left substring of the input string
+export const getLeftSubstring = (inputString: string, n: number): string => {
+  return inputString.slice(0, n);
+};
 
 
 

@@ -174,6 +174,11 @@ validator.startsWithPrefix(str)
 This function will Check if a string starts with a specific prefix or not. 
 ```
 
+```
+validator.getLeftSubstring(str, int)
+This function returns the substring denoted by n positive left-most characters.
+```
+
 # Contributing Guidelines
 
 
