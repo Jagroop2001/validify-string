@@ -199,6 +199,7 @@ export const isJWT = (str: string): boolean => {
   const jwtParts = str.split('.');
   return jwtParts.length === 3;
 };
+
 //trim functions
 export const trimLeft = (str: string, chars: string): string => {
   const regex = new RegExp(`^[${chars}]+`);
@@ -220,10 +221,17 @@ export const trimBoth = (str: string, chars: string): string => {
   return trimmedStr;
 };
 
+// Encode the string using base64 encoding
+export const encrypt = (str: string): string => {
+  return btoa(str);
+}
 
-
-
-
-
-
-
+// Decode the string using base64 decoding
+export const decrypt = (str: string): string => {
+  try {
+    return atob(str);
+  }
+  catch (e) {
+    return "The input is not a valid base64 encoded string";
+  }
+}
