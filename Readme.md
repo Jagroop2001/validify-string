@@ -15,6 +15,13 @@ import validator from "validify-string";
 
 validator.isPasswordStrong("StrongPass12@#");
 validator.isAlpha("Jagroop");
+
+const user = {
+    "Username": "YS",
+    "Role": "Admin",
+    "Email": "ys@gmail.com"
+}
+console.log(validator.generateJWT(user));
 ```
 
 ## Details
