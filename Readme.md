@@ -186,6 +186,14 @@ This function returns a random alphanumeric string of length n.
 validator.getLeftSubstring(str, int)
 This function returns the substring denoted by n positive left-most characters.
 ```
+```
+validator.encrypt(str)
+This function will encrypt the string to a base64 format.
+```
+```
+validator.decrypt(str)
+This function will decrypt the base64 string to the original string.
+```
 
 # Contributing Guidelines
 
