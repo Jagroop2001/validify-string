@@ -195,6 +195,13 @@ validator.decrypt(str)
 This function will decrypt the base64 string to the original string.
 ```
 
+```
+validator.generateJWT(payload, expiresIn)
+This function will generate a JSON Web Token (JWT) with the given payload and expiration time.
+
+Ensure that you have JWT_SECRET_KEY environment variable set in your .env file.
+```
+
 # Contributing Guidelines
 
 
@@ -240,6 +247,18 @@ Please go through the guidelines below to make your first contribution:
 
     ```sh
     npm run build
+    ```
+
+- Create .env file for environment variables:
+
+    ```sh
+        type nul > .env
+    ```
+
+- Add the following environment variables to the .env file:
+
+    ```sh
+    JWT_SECRET_KEY = <your-jwt-secret-key>
     ```
 
 - Make changes to the project and stage them:
