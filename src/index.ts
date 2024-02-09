@@ -26,6 +26,8 @@ import {
   trimRight,
   trimLeft,
   trimBoth,
+  encrypt,
+  decrypt,
   getAlphaNumString,
   getLeftSubstring,
 } from "./utils/utilityFunctions";
@@ -69,6 +71,8 @@ const validator = {
   trimRight,
   trimLeft,
   trimBoth,
+  encrypt,
+  decrypt,
   getAlphaNumString,
   getLeftSubstring,
   isStringAContainsB,
