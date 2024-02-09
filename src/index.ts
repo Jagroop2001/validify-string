@@ -37,6 +37,8 @@ import { isBase32, isBase64, isEthereumAddress ,isStringWithoutSpecialCharacters
 
 import { isStringAContainsB, isStringAMatchesB } from "./utils/stringCompareMatch";
 
+import { generateJWT } from "./utils/generateJWT";
+
 const validator = {
   isEmpty,
   isIdentical,
@@ -77,6 +79,7 @@ const validator = {
   getLeftSubstring,
   isStringAContainsB,
   isStringAMatchesB,
+  generateJWT,
 };
 
 export default validator;
