@@ -174,6 +174,19 @@ validator.startsWithPrefix(str)
 This function will Check if a string starts with a specific prefix or not. 
 ```
 
+```
+validator.endsWithSuffix(str)
+This function will Check if a string end with a specific suffix or not. 
+```
+```
+validator.getAlphaNumString(str)
+This function returns a random alphanumeric string of length n.
+```
+```
+validator.getLeftSubstring(str, int)
+This function returns the substring denoted by n positive left-most characters.
+```
+
 # Contributing Guidelines
 
 
