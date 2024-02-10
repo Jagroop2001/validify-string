@@ -21,7 +21,8 @@ const user = {
     "Role": "Admin",
     "Email": "ys@gmail.com"
 }
-console.log(validator.generateJWT(user));
+const jwt = validator.generateJWT(user, secret);
+console.log(validator.decodeJWT(jwt).payload);
 ```
 
 ## Details
@@ -203,8 +204,13 @@ This function will decrypt the base64 string to the original string.
 ```
 
 ```
-validator.generateJWT(payload, secret, expiresIn)
-This function will generate a JSON Web Token (JWT) with the given payload and expiration time.
+validator.generateJWT(payload, secret, expiresInSec)
+This function will generate a JSON Web Token (JWT) with the given payload and expiration time using the HMAC SHA256 algorithm.
+```
+
+```
+validator.decodeJWT(token)
+This function will decode the given JSON Web Token (JWT) and return the payload.
 ```
 
 # Contributing Guidelines

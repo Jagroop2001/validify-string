@@ -21,7 +21,8 @@ function base64urlDecode(data: string): string {
 	return buffer.toString();
 }
 
-export const generateJWT = (payload: Payload, secret: string, expiresInSec: number): string => {
+// Generate a JWT token with the given payload, secret and expiration time using HMAC SHA256 algorithm
+export const generateJWT = (payload: Payload, secret: string, expiresInSec: number = 3600): string => {
   const header = {
 	alg: 'HS256',
 	typ: 'JWT'
@@ -37,6 +38,7 @@ export const generateJWT = (payload: Payload, secret: string, expiresInSec: numb
   return token;
 }
 
+// Decode the given JWT token
 export const decodeJWT = (token: string): DecodedJWT | null => {
 	const parts = token.split('.');
 	if (parts.length !== 3) {
