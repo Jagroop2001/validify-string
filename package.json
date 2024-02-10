@@ -32,7 +32,6 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "dotenv": "^16.4.1",
     "jsonwebtoken": "^9.0.2"
   }
 }
