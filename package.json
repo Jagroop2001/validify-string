@@ -1,6 +1,6 @@
 {
   "name": "validify-string",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Ensure accurate and secure input with our reliable string validation library.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Jagroop2001/validify-string#readme",
   "devDependencies": {
+    "@types/node": "^20.11.17",
     "typescript": "^4.9.5"
   },
   "files": [

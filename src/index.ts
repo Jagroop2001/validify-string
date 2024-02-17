@@ -26,6 +26,8 @@ import {
   trimRight,
   trimLeft,
   trimBoth,
+  encrypt,
+  decrypt,
   getAlphaNumString,
   getLeftSubstring,
   addUnderscore,
@@ -37,6 +39,8 @@ import {
 import { isBase32, isBase64, isEthereumAddress ,isStringWithoutSpecialCharacters,startsWithPrefix,endsWithSuffix} from "./utils/validateFunctions";
 
 import { isStringAContainsB, isStringAMatchesB } from "./utils/stringCompareMatch";
+
+import { generateJWT, decodeJWT } from "./utils/generateJWT";
 
 const validator = {
   isEmpty,
@@ -72,6 +76,8 @@ const validator = {
   trimRight,
   trimLeft,
   trimBoth,
+  encrypt,
+  decrypt,
   getAlphaNumString,
   getLeftSubstring,
   isStringAContainsB,
@@ -79,6 +85,8 @@ const validator = {
   addUnderscore,
   removeSpace,
   removeUnderscore,
+  generateJWT,
+  decodeJWT,
 };
 
 export default validator;

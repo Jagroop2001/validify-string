@@ -15,6 +15,14 @@ import validator from "validify-string";
 
 validator.isPasswordStrong("StrongPass12@#");
 validator.isAlpha("Jagroop");
+
+const user = {
+    "Username": "YS",
+    "Role": "Admin",
+    "Email": "ys@gmail.com"
+}
+const jwt = validator.generateJWT(user, secret);
+console.log(validator.decodeJWT(jwt).payload);
 ```
 
 ## Details
@@ -175,16 +183,34 @@ This function will Check if a string starts with a specific prefix or not.
 ```
 
 ```
-
 validator.endsWithSuffix(str)
 This function will Check if a string end with a specific suffix or not. 
-
-validator.getAlphaNumString(int)
+```
+```
+validator.getAlphaNumString(str)
 This function returns a random alphanumeric string of length n.
 ```
 ```
 validator.getLeftSubstring(str, int)
 This function returns the substring denoted by n positive left-most characters.
+```
+```
+validator.encrypt(str)
+This function will encrypt the string to a base64 format.
+```
+```
+validator.decrypt(str)
+This function will decrypt the base64 string to the original string.
+```
+
+```
+validator.generateJWT(payload, secret, expiresInSec)
+This function will generate a JSON Web Token (JWT) with the given payload and expiration time using the HMAC SHA256 algorithm.
+```
+
+```
+validator.decodeJWT(token)
+This function will decode the given JSON Web Token (JWT) and return the payload.
 ```
 
 ```

@@ -199,6 +199,7 @@ export const isJWT = (str: string): boolean => {
   const jwtParts = str.split('.');
   return jwtParts.length === 3;
 };
+
 //trim functions
 export const trimLeft = (str: string, chars: string): string => {
   const regex = new RegExp(`^[${chars}]+`);
@@ -220,6 +221,62 @@ export const trimBoth = (str: string, chars: string): string => {
   return trimmedStr;
 };
 
+// Encode the string using base64 encoding
+export const encrypt = (str: string): string => {
+    const base64Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+    let result = '';
+    let i = 0;
+
+    while (i < str.length) {
+        const char1 = str.charCodeAt(i++);
+        const char2 = i < str.length ? str.charCodeAt(i++) : NaN;
+        const char3 = i < str.length ? str.charCodeAt(i++) : NaN;
+
+        const byte1 = char1 >> 2;
+        const byte2 = ((char1 & 3) << 4) | (char2 >> 4);
+        const byte3 = ((char2 & 15) << 2) | (char3 >> 6);
+        const byte4 = char3 & 63;
+
+        let encodedChar3 = isNaN(char2) ? '=' : base64Chars.charAt(byte3);
+        let encodedChar4 = isNaN(char3) ? '=' : base64Chars.charAt(byte4);
+
+        result += base64Chars.charAt(byte1) + base64Chars.charAt(byte2) + encodedChar3 + encodedChar4;
+    }
+    return result;
+}
+
+// Decode the string using base64 decoding
+export const decrypt = (toDecode: string): string => {
+  try {
+    let result = '';
+    let i = 0;
+    const base64Chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+    const base64Lookup = new Array(256);
+    for (let i = 0; i < base64Chars.length; i++) {
+      base64Lookup[base64Chars.charCodeAt(i)] = i;
+    }
+    while (i < toDecode.length) {
+      const byte1 = base64Lookup[toDecode.charCodeAt(i++)];
+      const byte2 = base64Lookup[toDecode.charCodeAt(i++)];
+      const byte3 = base64Lookup[toDecode.charCodeAt(i++)];
+      const byte4 = base64Lookup[toDecode.charCodeAt(i++)];
+      const char1 = (byte1 << 2) | (byte2 >> 4);
+      const char2 = ((byte2 & 15) << 4) | (byte3 >> 2);
+      const char3 = ((byte3 & 3) << 6) | byte4;
+      result += String.fromCharCode(char1);
+      if (byte3 !== 64) {
+        result += String.fromCharCode(char2);
+      }
+      if (byte4 !== 64) {
+        result += String.fromCharCode(char3);
+      }
+    }
+    return result;
+  }
+  catch (e) {
+    return "The input is not a valid base64 encoded string";
+  }
+}
 
 // Generate Random Alphanumeric String
 export const getAlphaNumString = (length: number): string => {
@@ -235,6 +292,7 @@ export const getAlphaNumString = (length: number): string => {
 export const getLeftSubstring = (inputString: string, n: number): string => {
   return inputString.slice(0, n);
 };
+
 
 
 //function to replace space to underscore from string
