@@ -28,6 +28,9 @@ import {
   trimBoth,
   getAlphaNumString,
   getLeftSubstring,
+  addUnderscore,
+  removeSpace,
+  removeUnderscore,
 } from "./utils/utilityFunctions";
 
 
@@ -73,6 +76,9 @@ const validator = {
   getLeftSubstring,
   isStringAContainsB,
   isStringAMatchesB,
+  addUnderscore,
+  removeSpace,
+  removeUnderscore,
 };
 
 export default validator;

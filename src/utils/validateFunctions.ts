@@ -49,3 +49,5 @@ export function endsWithSuffix(inputString: string, suffix: string): boolean {
     return inputString.endsWith(suffix);
   }
   
+
+  
