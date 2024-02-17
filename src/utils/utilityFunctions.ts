@@ -312,3 +312,16 @@ export function removeSpace(inputString: string): string {
 export function removeUnderscore(inputString: string): string {
   return inputString.replace(/_/g, '');
 }
+
+// Remove numbers from a string
+export const removeNumber = (str: string): string => {
+  return str.replace(/[0-9]/g, '');
+};
+
+// Replace spaces with full stop
+export const addFullstop = (str: string): string => {
+  return str.replace(/\s/g, '.');
+};
+
+
+

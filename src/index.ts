@@ -33,6 +33,9 @@ import {
   addUnderscore,
   removeSpace,
   removeUnderscore,
+  addFullstop,
+  removeNumber,
+
 } from "./utils/utilityFunctions";
 
 
@@ -87,6 +90,8 @@ const validator = {
   removeUnderscore,
   generateJWT,
   decodeJWT,
+  addFullstop,
+  removeNumber,
 };
 
 export default validator;

@@ -225,6 +225,15 @@ This function remove the space from the string .
 validator.removeUnderscore(str)
 This function remove the underscore from the string . 
 ```
+```
+validator.removeNumber(str)
+This function remove the number from string.
+```
+```
+validator.addFullstop(str)
+This function replaces space in string with fullstop.
+```
+
 
 # Contributing Guidelines
 
