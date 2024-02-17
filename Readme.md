@@ -187,6 +187,19 @@ validator.getLeftSubstring(str, int)
 This function returns the substring denoted by n positive left-most characters.
 ```
 
+```
+validator.addUnderscore(str)
+This function replace the space to underscore from the string.
+```
+```
+validator.removeSpace(str)
+This function remove the space from the string .
+```
+```
+validator.removeUnderscore(str)
+This function remove the underscore from the string . 
+```
+
 # Contributing Guidelines
 
 
