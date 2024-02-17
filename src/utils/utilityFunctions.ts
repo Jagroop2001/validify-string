@@ -292,3 +292,23 @@ export const getAlphaNumString = (length: number): string => {
 export const getLeftSubstring = (inputString: string, n: number): string => {
   return inputString.slice(0, n);
 };
+
+
+
+//function to replace space to underscore from string
+
+export function addUnderscore(inputString: string): string {
+  return inputString.replace(/ /g, '_');
+}
+
+//function to remove space from the string 
+
+export function removeSpace(inputString: string): string {
+  return inputString.replace(/\s/g, '');
+}
+
+//function to remove underscore from string 
+
+export function removeUnderscore(inputString: string): string {
+  return inputString.replace(/_/g, '');
+}

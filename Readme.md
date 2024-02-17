@@ -213,6 +213,19 @@ validator.decodeJWT(token)
 This function will decode the given JSON Web Token (JWT) and return the payload.
 ```
 
+```
+validator.addUnderscore(str)
+This function replace the space to underscore from the string.
+```
+```
+validator.removeSpace(str)
+This function remove the space from the string .
+```
+```
+validator.removeUnderscore(str)
+This function remove the underscore from the string . 
+```
+
 # Contributing Guidelines
 
 
