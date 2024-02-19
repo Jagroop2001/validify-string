@@ -35,6 +35,7 @@ import {
   removeUnderscore,
   addFullstop,
   removeNumber,
+  generateRandomString
 
 } from "./utils/utilityFunctions";
 
@@ -92,6 +93,7 @@ const validator = {
   decodeJWT,
   addFullstop,
   removeNumber,
+  generateRandomString
 };
 
 export default validator;

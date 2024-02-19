@@ -322,6 +322,16 @@ export const removeNumber = (str: string): string => {
 export const addFullstop = (str: string): string => {
   return str.replace(/\s/g, '.');
 };
+export const generateRandomString = (length: number): string => {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+  let result = '';
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+};
+
 
 
 
