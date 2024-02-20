@@ -233,6 +233,10 @@ This function remove the number from string.
 validator.addFullstop(str)
 This function replaces space in string with fullstop.
 ```
+```
+validator.generateRandomString(length)
+This function generates the random string of given length.
+```
 
 
 # Contributing Guidelines
